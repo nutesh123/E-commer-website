@@ -2,7 +2,7 @@ import { ReactDOM } from "react";
 import React from "react";
 import App from "../../App";
 import classes from './music.module.css'
-
+import Store from "./Store";
 
 function Music(props)
 {
@@ -15,8 +15,8 @@ function Music(props)
                 return(
                     <div className={classes.centeritems}>
                          <img src={item.imageUrl}/> 
-                       <p>{item.title}</p> 
-                       <p>${item.price}</p>
+                       <div>{item.title}</div> 
+                       <div>${item.price}</div>
                          <button className={classes.buttonCss} onClick={()=>{props.addtocart(item)}
                             }
                          >Add To Cart</button>

@@ -1,21 +1,19 @@
-import Cart from './Cart';
+import { Link } from 'react-router-dom';
 import classes from  './Header.module.css'
 import App from '../../App';
+import Store from '../STORE/Store';
 
 const Header = (props)=>{
 
   return(
     <div>
-
     <div className={classes.black}>
-      <h3>HOME    <span onClick={() => props.handleshow(false)}>STORE</span>   ABOUT</h3>
+      <h3> <Link to='Home'>HOME</Link>  
+          <span onClick={() => props.handleshow(false)}><Link to='Store'>STORE</Link></span>
+           <Link to='About'>ABOUT</Link> 
+           </h3>
       <div className={classes.cart} onClick={() => props.handleshow(true)}><button>Cart {props.count}</button></div>
-    
     </div>
-    
-    <div className={classes.header}>
-       <h1> The Generics </h1>
-      </div>
     </div>
   )
 }

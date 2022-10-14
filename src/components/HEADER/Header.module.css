@@ -6,7 +6,6 @@
     justify-content: center;
     min-height: 3vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(8px + 1vmin);
@@ -52,12 +51,12 @@
     top:1;
     left: 10;
     width: 100%;
-    height: 7rem;
+    height: 8rem;
     background-color:rgb(98, 98, 235);
     color: white;
     display: flex;
-    text-align: center;
-    text-size-adjust:1;
+    align-items: center;
+    text-size-adjust: 1;
   }
   .cart{
 position:absolute;

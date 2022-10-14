@@ -2,7 +2,7 @@ import { ReactDOM } from 'react'
 import React from 'react'
 import classes from './Header.module.css'
 import styles from'./cart.module.css'
-
+import Store from '../STORE/Store'
 const Cart =(props)=>{
     
              console.log(`inside Cart`, props.cart);
